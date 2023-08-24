@@ -1,0 +1,16 @@
+// Fonts
+$logo-font: "Shrikhand", cursive;
+$text-font: "Roboto", sans-serif;
+
+// Colors
+$pri-color: #9356dc;
+$sec-olor: #ff79da;
+$ter-color: #99e2d0;
+
+// General settings
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $text-font;
+}
