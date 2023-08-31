@@ -1,0 +1,208 @@
+@import "../variables.scss";
+@import "../mixin.scss";
+
+// General settings for HTML tags
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $text-font;
+}
+
+body {
+  background-color: $background-color;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Class styling
+.header {
+  @include center-container;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 8px;
+
+  &__image {
+    width: 10rem;
+    padding: 1.25rem 0rem;
+  }
+}
+
+.location {
+  @include center-container;
+  background-color: $dark-grey;
+  gap: 1rem;
+  padding: 0.75rem 0rem;
+}
+
+.overview {
+  @include center-container;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2.5rem 1.5rem;
+  background-color: $light-grey;
+
+  &__text {
+    color: #858585;
+    text-align: center;
+  }
+
+  &__button {
+    color: white;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background: linear-gradient(to bottom right, $sec-olor, $pri-color);
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.how-it-works {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 2.5rem 1.5rem;
+  gap: 1.5rem;
+
+  &__steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    counter-reset: item-counter;
+
+    &__step-item {
+      display: flex;
+      width: 100%;
+      padding: 1.5rem 2rem;
+      border-radius: 1rem;
+      background-color: $light-grey;
+      align-items: center;
+      gap: 1.5rem;
+      position: relative;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+      &::before {
+        counter-increment: item-counter;
+        content: counter(item-counter);
+        @include center-container;
+        position: absolute;
+        left: -0.5rem;
+        width: 1.25rem;
+        height: 1.25rem;
+        font-size: 0.75rem;
+        color: white;
+        background-color: $pri-color;
+        border-radius: 100%;
+      }
+
+      &__icon {
+        color: #8d8d8d;
+        font-size: 1.2rem;
+      }
+
+      &__text {
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1.5rem;
+  gap: 2rem;
+  background-color: $light-grey;
+
+  &__restaurants {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    &__restaurant {
+      background-color: $background-color;
+      border-radius: 1.25rem;
+      overflow: hidden;
+      position: relative;
+
+      &__image-part {
+        img {
+          width: 100%;
+          aspect-ratio: 2;
+          object-fit: cover;
+        }
+      }
+
+      &__new {
+        position: absolute;
+        background-color: $ter-color;
+        color: #008766;
+        top: 0.85rem;
+        right: 0.8rem;
+        padding: 0.4rem 2rem;
+        border-radius: 0.25rem;
+        font-weight: 600;
+      }
+
+      &__text-part {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 4.5rem;
+        padding: 1rem;
+        padding-right: 2rem;
+        justify-content: space-between;
+
+        &__title {
+          font-size: 1rem;
+        }
+
+        &__city {
+          font-weight: 300;
+        }
+
+        &__heart {
+          font-size: 1.5rem;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $bottom-color;
+  padding: 1.5rem;
+
+  &__title {
+    font-family: $logo-font;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    list-style-type: none;
+
+    &__item {
+      margin: 0.5rem 0rem;
+      color: white;
+      font-size: 0.8rem;
+
+      &__icon {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
