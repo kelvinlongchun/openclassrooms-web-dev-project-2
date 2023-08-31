@@ -5,3 +5,15 @@
   align-items: center;
   flex-direction: $direction;
 }
+
+@mixin purple-button {
+  color: white;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(to bottom right, $sec-olor, $pri-color);
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
