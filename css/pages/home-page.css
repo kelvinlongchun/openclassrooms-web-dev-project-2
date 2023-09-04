@@ -188,10 +188,6 @@ a {
   filter: brightness(110%);
 }
 
-body {
-  position: relative;
-}
-
 .location {
   display: flex;
   justify-content: center;
@@ -290,7 +286,7 @@ body {
 }
 .restaurants-part__restaurants__restaurant__image-part img {
   width: 100%;
-  aspect-ratio: 2;
+  aspect-ratio: 2/1;
   -o-object-fit: cover;
      object-fit: cover;
 }

@@ -87,6 +87,11 @@ $confirmation-animation-time: 0.6s;
               $menu-item-animation-time * 2;
           }
 
+          &:nth-child(4) {
+            animation-delay: $menu-item-animation-delay +
+              $menu-item-animation-time * 3;
+          }
+
           &:hover {
             cursor: pointer;
 

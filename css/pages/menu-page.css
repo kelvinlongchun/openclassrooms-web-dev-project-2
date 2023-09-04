@@ -358,6 +358,9 @@ a {
 .restaurant-card__menus__menu__foods__food:nth-child(3) {
   animation-delay: 1s;
 }
+.restaurant-card__menus__menu__foods__food:nth-child(4) {
+  animation-delay: 1.2s;
+}
 .restaurant-card__menus__menu__foods__food:hover {
   cursor: pointer;
 }
@@ -429,4 +432,4 @@ a {
   width: fit-content;
   padding: 1rem 4rem;
   align-self: center;
-}/*# sourceMappingURL=the-full-palatte.css.map */
+}/*# sourceMappingURL=menu-page.css.map */

@@ -4,10 +4,6 @@
 @import "../variables";
 @import "../mixins";
 
-body {
-  position: relative;
-}
-
 .location {
   @include center-container;
   background-color: $dark-grey;
@@ -105,7 +101,7 @@ body {
       &__image-part {
         img {
           width: 100%;
-          aspect-ratio: 2;
+          aspect-ratio: 2 /1;
           object-fit: cover;
         }
       }
