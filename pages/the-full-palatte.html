@@ -19,7 +19,11 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <a class="header__arrow" href="./index.html">
+      <a
+        href="../index.html"
+        class="header__arrow"
+        aria-label="Back to the main page"
+      >
         <i class="fa-solid fa-arrow-left"></i
       ></a>
       <img
@@ -40,9 +44,10 @@
       <section class="restaurant-card">
         <section class="restaurant-card__title">
           <h1 class="restaurant-card__title__text">The Full Palatte</h1>
-          <i
-            class="fa-sharp fa-regular fa-heart restaurant-card__title__heart"
-          ></i>
+          <div class="heart-container">
+            <i class="fa-regular fa-heart heart-container__heart"></i>
+            <i class="fa-solid fa-heart heart-container__heart--filled"></i>
+          </div>
         </section>
         <section class="restaurant-card__menus">
           <section class="restaurant-card__menus__menu">
@@ -58,9 +63,16 @@
                 >
                   With Southern French spices
                 </p>
-                <p class="restaurant-card__menus__menu__foods__food__price">
-                  25€
-                </p>
+                <strong class="restaurant-card__menus__menu__foods__food__price"
+                  >25€</strong
+                >
+                <div
+                  class="restaurant-card__menus__menu__foods__food__confirmation"
+                >
+                  <i
+                    class="fa-solid fa-circle-check restaurant-card__menus__menu__foods__food__confirmation__tick"
+                  ></i>
+                </div>
               </section>
               <section class="restaurant-card__menus__menu__foods__food">
                 <h3 class="restaurant-card__menus__menu__foods__food__name">
@@ -71,9 +83,18 @@
                 >
                   With black truffle shavings
                 </p>
-                <p class="restaurant-card__menus__menu__foods__food__price">
+                <strong
+                  class="restaurant-card__menus__menu__foods__food__price"
+                >
                   35€
-                </p>
+                </strong>
+                <div
+                  class="restaurant-card__menus__menu__foods__food__confirmation"
+                >
+                  <i
+                    class="fa-solid fa-circle-check restaurant-card__menus__menu__foods__food__confirmation__tick"
+                  ></i>
+                </div>
               </section>
               <section class="restaurant-card__menus__menu__foods__food">
                 <h3 class="restaurant-card__menus__menu__foods__food__name">
@@ -84,9 +105,18 @@
                 >
                   Seasoned with truffle cream and...
                 </p>
-                <p class="restaurant-card__menus__menu__foods__food__price">
+                <strong
+                  class="restaurant-card__menus__menu__foods__food__price"
+                >
                   20€
-                </p>
+                </strong>
+                <div
+                  class="restaurant-card__menus__menu__foods__food__confirmation"
+                >
+                  <i
+                    class="fa-solid fa-circle-check restaurant-card__menus__menu__foods__food__confirmation__tick"
+                  ></i>
+                </div>
               </section>
             </section>
           </section>
@@ -103,9 +133,18 @@
                 >
                   With delicately sliced and seasoned veg...
                 </p>
-                <p class="restaurant-card__menus__menu__foods__food__price">
+                <strong
+                  class="restaurant-card__menus__menu__foods__food__price"
+                >
                   40€
-                </p>
+                </strong>
+                <div
+                  class="restaurant-card__menus__menu__foods__food__confirmation"
+                >
+                  <i
+                    class="fa-solid fa-circle-check restaurant-card__menus__menu__foods__food__confirmation__tick"
+                  ></i>
+                </div>
               </section>
               <section class="restaurant-card__menus__menu__foods__food">
                 <h3 class="restaurant-card__menus__menu__foods__food__name">
@@ -116,9 +155,18 @@
                 >
                   With black truffle pureed parsnips
                 </p>
-                <p class="restaurant-card__menus__menu__foods__food__price">
+                <strong
+                  class="restaurant-card__menus__menu__foods__food__price"
+                >
                   35€
-                </p>
+                </strong>
+                <div
+                  class="restaurant-card__menus__menu__foods__food__confirmation"
+                >
+                  <i
+                    class="fa-solid fa-circle-check restaurant-card__menus__menu__foods__food__confirmation__tick"
+                  ></i>
+                </div>
               </section>
               <section class="restaurant-card__menus__menu__foods__food">
                 <h3 class="restaurant-card__menus__menu__foods__food__name">
@@ -129,9 +177,18 @@
                 >
                   With citrus dessing
                 </p>
-                <p class="restaurant-card__menus__menu__foods__food__price">
+                <strong
+                  class="restaurant-card__menus__menu__foods__food__price"
+                >
                   44€
-                </p>
+                </strong>
+                <div
+                  class="restaurant-card__menus__menu__foods__food__confirmation"
+                >
+                  <i
+                    class="fa-solid fa-circle-check restaurant-card__menus__menu__foods__food__confirmation__tick"
+                  ></i>
+                </div>
               </section>
             </section>
           </section>
@@ -148,9 +205,18 @@
                 >
                   Revisted
                 </p>
-                <p class="restaurant-card__menus__menu__foods__food__price">
+                <strong
+                  class="restaurant-card__menus__menu__foods__food__price"
+                >
                   18€
-                </p>
+                </strong>
+                <div
+                  class="restaurant-card__menus__menu__foods__food__confirmation"
+                >
+                  <i
+                    class="fa-solid fa-circle-check restaurant-card__menus__menu__foods__food__confirmation__tick"
+                  ></i>
+                </div>
               </section>
               <section class="restaurant-card__menus__menu__foods__food">
                 <h3 class="restaurant-card__menus__menu__foods__food__name">
@@ -161,9 +227,18 @@
                 >
                   With vanilla ice cream
                 </p>
-                <p class="restaurant-card__menus__menu__foods__food__price">
+                <strong
+                  class="restaurant-card__menus__menu__foods__food__price"
+                >
                   22€
-                </p>
+                </strong>
+                <div
+                  class="restaurant-card__menus__menu__foods__food__confirmation"
+                >
+                  <i
+                    class="fa-solid fa-circle-check restaurant-card__menus__menu__foods__food__confirmation__tick"
+                  ></i>
+                </div>
               </section>
               <section class="restaurant-card__menus__menu__foods__food">
                 <h3 class="restaurant-card__menus__menu__foods__food__name">
@@ -174,14 +249,23 @@
                 >
                   With spices and black truffle
                 </p>
-                <p class="restaurant-card__menus__menu__foods__food__price">
+                <strong
+                  class="restaurant-card__menus__menu__foods__food__price"
+                >
                   23€
-                </p>
+                </strong>
+                <div
+                  class="restaurant-card__menus__menu__foods__food__confirmation"
+                >
+                  <i
+                    class="fa-solid fa-circle-check restaurant-card__menus__menu__foods__food__confirmation__tick"
+                  ></i>
+                </div>
               </section>
             </section>
           </section>
         </section>
-        <button class="restaurant-card__button">Order</button>
+        <button class="purple-button">Order</button>
       </section>
     </main>
     <!-- Footer -->
@@ -190,22 +274,20 @@
       <ul class="footer__list">
         <li class="footer__list__item">
           <a href="#">
-            <i
-              class="fa-sharp fa-solid fa-utensils footer__list__item__icon"
-            ></i>
+            <i class="fa-solid fa-utensils footer__list__item__icon"></i>
             Suggest a restaurant
           </a>
         </li>
         <li class="footer__list__item">
           <a href="#">
-            <i
-              class="fa-sharp fa-solid fa-handshake-angle footer__list__item__icon"
-            ></i>
+            <i class="fa-solid fa-handshake-angle footer__list__item__icon"></i>
             Become a partner
           </a>
         </li>
         <li class="footer__list__item"><a href="#">Legal</a></li>
-        <li class="footer__list__item"><a href="#">Contact</a></li>
+        <li class="footer__list__item">
+          <a href="mailto:contact@ohmyfood.com">Contact</a>
+        </li>
       </ul>
     </footer>
   </body>

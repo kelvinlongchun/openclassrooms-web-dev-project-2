@@ -1,0 +1,67 @@
+@import "./variables";
+@import "./mixins";
+
+// General settings for HTML tags
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $text-font;
+}
+
+body {
+  background-color: $background-color;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Class styling
+.header {
+  @include center-container;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 8px;
+
+  .header__arrow {
+    position: absolute;
+    left: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  &__image {
+    width: 10rem;
+    padding: 1.25rem 0rem;
+  }
+}
+
+.footer {
+  background-color: $bottom-color;
+  padding: 1.5rem;
+
+  &__title {
+    font-family: $logo-font;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    list-style-type: none;
+
+    &__item {
+      margin: 0.5rem 0rem;
+      color: white;
+      font-size: 0.8rem;
+
+      &__icon {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}

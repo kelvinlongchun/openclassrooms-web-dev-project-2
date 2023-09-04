@@ -1,0 +1,178 @@
+@import "../heart-element";
+@import "../../animations";
+@import "../../variables";
+@import "../purple_button";
+
+$menu-item-animation-delay: 0.6s;
+$menu-item-animation-time: 0.2s;
+$confirmation-animation-time: 0.6s;
+
+.restaurant-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  background-color: $light-grey;
+  padding: 2.5rem 1rem;
+  position: relative;
+  border-radius: 2.5rem;
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__text {
+      font-family: $logo-font;
+      font-weight: 400;
+      font-size: 1.75rem;
+    }
+
+    div.heart-container {
+      margin-right: 2rem;
+    }
+  }
+
+  &__menus {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    &__menu {
+      &__title {
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin-bottom: 0.35rem;
+        color: $light-text-color;
+      }
+
+      &__line {
+        background-color: $ter-color;
+        width: 3rem;
+        height: 0.2rem;
+        margin-bottom: 1rem;
+      }
+
+      &__foods {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+
+        &__food {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          min-width: 100%;
+          padding: 1rem 0.75rem;
+          padding-right: 1.5rem;
+          background-color: white;
+          height: 5rem;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          border-radius: 1rem;
+          overflow: hidden;
+          opacity: 0;
+          animation-name: menu-items-show;
+          animation-delay: $menu-item-animation-delay;
+          animation-duration: $menu-item-animation-time;
+          animation-fill-mode: forwards;
+
+          &:nth-child(2) {
+            animation-delay: $menu-item-animation-delay +
+              $menu-item-animation-time;
+          }
+
+          &:nth-child(3) {
+            animation-delay: $menu-item-animation-delay +
+              $menu-item-animation-time * 2;
+          }
+
+          &:hover {
+            cursor: pointer;
+
+            .restaurant-card__menus__menu__foods__food__desciption {
+              animation-name: desciption-width-become-small;
+              animation-duration: $confirmation-animation-time;
+              animation-fill-mode: forwards;
+            }
+
+            .restaurant-card__menus__menu__foods__food__price {
+              animation-name: price-move-left;
+              animation-duration: $confirmation-animation-time;
+              animation-fill-mode: forwards;
+            }
+
+            .restaurant-card__menus__menu__foods__food__confirmation {
+              animation-name: confirmation-show;
+              animation-duration: $confirmation-animation-time;
+              animation-fill-mode: forwards;
+
+              &__tick {
+                animation-name: spin;
+                animation-duration: $confirmation-animation-time;
+                animation-fill-mode: forwards;
+              }
+            }
+          }
+
+          &:not(hover) {
+            .restaurant-card__menus__menu__foods__food__desciption {
+              animation-name: desciption-width-become-small-reverse;
+              animation-duration: $confirmation-animation-time;
+            }
+
+            .restaurant-card__menus__menu__foods__food__price {
+              animation-name: price-move-right;
+              animation-duration: $confirmation-animation-time;
+            }
+
+            .restaurant-card__menus__menu__foods__food__confirmation {
+              animation-name: confirmation-hide;
+              animation-duration: $confirmation-animation-time;
+
+              &__tick {
+                animation-name: spin-reverse;
+                animation-duration: $confirmation-animation-time;
+              }
+            }
+          }
+
+          &__name {
+            width: 100%;
+            font-size: 1.1rem;
+          }
+
+          &__desciption {
+            color: $light-text-color;
+            max-width: 80%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+
+          &__confirmation {
+            position: absolute;
+            right: -4rem;
+            top: 0rem;
+            height: 100%;
+            background: $ter-color;
+            min-width: 4rem;
+            @include center-container;
+
+            &__tick {
+              font-size: 1.5rem;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  purple-button {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 1rem 4rem;
+    align-self: center;
+  }
+}

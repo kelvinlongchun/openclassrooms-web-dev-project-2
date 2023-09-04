@@ -1,0 +1,34 @@
+@import "../animations";
+
+$herat-height: 1.5rem;
+
+.heart-container {
+  position: relative;
+  height: $herat-height;
+
+  &:hover {
+    cursor: pointer;
+
+    .heart-container__heart--filled {
+      animation-name: heart-fill;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+  }
+
+  .fa-heart {
+    font-size: $herat-height;
+    text-align: right;
+    position: absolute;
+    right: 0rem;
+  }
+
+  &__heart--filled {
+    background: linear-gradient(to bottom right, $sec-olor, $pri-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+  }
+}
