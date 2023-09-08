@@ -426,7 +426,7 @@ a {
   font-size: 1.5rem;
   color: white;
 }
-.restaurant-card purple-button {
+.restaurant-card .purple-button {
   width: -moz-fit-content;
   width: fit-content;
   padding: 1rem 4rem;
