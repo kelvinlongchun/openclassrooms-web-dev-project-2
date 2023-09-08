@@ -287,8 +287,7 @@ a {
 .restaurants-part__restaurants__restaurant__image-part img {
   width: 100%;
   aspect-ratio: 2/1;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .restaurants-part__restaurants__restaurant__new {
   position: absolute;
@@ -338,4 +337,6 @@ a {
   animation-name: spin;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
-}/*# sourceMappingURL=home-page.css.map */
+}
+
+/*# sourceMappingURL=home-page.css.map */

@@ -1,0 +1,23 @@
+{
+  "name": "openclassrooms-web-dev-project-2",
+  "version": "1.0.0",
+  "description": "[https://kelvinwongdev.github.io/openclassrooms-web-dev-project-2](https://kelvinwongdev.github.io/openclassrooms-web-dev-project-2)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:win": "sass ./sass/pages:./css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelvinwongdev/openclassrooms-web-dev-project-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kelvinwongdev/openclassrooms-web-dev-project-2/issues"
+  },
+  "homepage": "https://github.com/kelvinwongdev/openclassrooms-web-dev-project-2#readme",
+  "dependencies": {
+    "sass": "^1.66.1"
+  }
+}
