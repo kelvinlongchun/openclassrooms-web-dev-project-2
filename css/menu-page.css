@@ -318,6 +318,19 @@ a {
   flex-direction: column;
   gap: 2.5rem;
 }
+@media (min-width: 800px) {
+  .restaurant-card__menus {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: initial;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 800px) {
+  .restaurant-card__menus__menu {
+    max-width: 32%;
+  }
+}
 .restaurant-card__menus__menu__title {
   font-size: 1.1rem;
   font-weight: 400;

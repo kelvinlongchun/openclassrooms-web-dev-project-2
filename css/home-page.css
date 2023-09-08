@@ -225,6 +225,17 @@ a {
   padding: 2.5rem 1.5rem;
   gap: 1.5rem;
 }
+@media (min-width: 800px) {
+  .how-it-works {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+@media (min-width: 800px) {
+  .how-it-works__title {
+    align-self: center;
+  }
+}
 .how-it-works__steps {
   display: flex;
   flex-direction: column;
@@ -275,6 +286,11 @@ a {
   gap: 2rem;
   background-color: #f6f6f6;
 }
+@media (min-width: 800px) {
+  .restaurants-part__title {
+    align-self: center;
+  }
+}
 .restaurants-part__restaurants {
   display: flex;
   flex-direction: column;
@@ -285,6 +301,12 @@ a {
   border-radius: 1.25rem;
   overflow: hidden;
   position: relative;
+}
+@media (min-width: 800px) {
+  .restaurants-part__restaurants__restaurant {
+    max-width: 500px;
+    margin: auto;
+  }
 }
 .restaurants-part__restaurants__restaurant__image-part img {
   width: 100%;

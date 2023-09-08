@@ -35,6 +35,17 @@
   padding: 2.5rem 1.5rem;
   gap: 1.5rem;
 
+  @media (min-width: $pc-width) {
+    max-width: $pc-element-max-width;
+    margin: auto;
+  }
+
+  &__title {
+    @media (min-width: $pc-width) {
+      align-self: center;
+    }
+  }
+
   &__steps {
     display: flex;
     flex-direction: column;
@@ -87,6 +98,12 @@
   gap: 2rem;
   background-color: $light-grey;
 
+  &__title {
+    @media (min-width: $pc-width) {
+      align-self: center;
+    }
+  }
+
   &__restaurants {
     display: flex;
     flex-direction: column;
@@ -97,6 +114,11 @@
       border-radius: 1.25rem;
       overflow: hidden;
       position: relative;
+
+      @media (min-width: $pc-width) {
+        max-width: $pc-element-max-width;
+        margin: auto;
+      }
 
       &__image-part {
         img {
