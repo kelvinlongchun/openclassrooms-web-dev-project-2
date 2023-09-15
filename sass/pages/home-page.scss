@@ -63,7 +63,13 @@
       gap: 1.5rem;
       position: relative;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      &:hover {
+        background: lighten($pri-color, 30%);
 
+        & i {
+          color: $pri-color;
+        }
+      }
       &::before {
         counter-increment: item-counter;
         content: counter(item-counter);

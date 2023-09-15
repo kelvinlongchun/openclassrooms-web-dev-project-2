@@ -255,6 +255,12 @@ a {
   position: relative;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+.how-it-works__steps__step-item:hover {
+  background: #e4d5f6;
+}
+.how-it-works__steps__step-item:hover i {
+  color: #9356dc;
+}
 .how-it-works__steps__step-item::before {
   counter-increment: item-counter;
   content: counter(item-counter);
